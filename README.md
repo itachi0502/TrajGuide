@@ -52,7 +52,7 @@ python train_bfn_twisted.py \
 
 Outputs (default): `MolPilot/outputs/condition_aware_integration/v1/`
 
-### Stage 2: Guidance dataset generation
+### Stage 2: Guidance dataset generation and Geometric guidance network training
 
 ```bash
 python generate_condition_guidance_dataset.py \
@@ -61,8 +61,6 @@ python generate_condition_guidance_dataset.py \
 ```
 
 Outputs: `data/condition_guidance_dataset/{train,val,test}_condition_data.pkl` and `data/condition_guidance_dataset/dataset_statistics.pkl`
-
-### Stage 3: Geometric guidance network training
 
 ```bash
 python train_geometric_guidance_network.py \
@@ -75,7 +73,7 @@ python train_geometric_guidance_network.py \
 
 Outputs: `models/geometric_guidance/geometric_guidance_best.pt`
 
-### Stage 4: Joint inference (guided sampling)
+### Stage 3: Joint inference (guided sampling)
 
 ```bash
 python train_bfn_twisted.py \
@@ -93,9 +91,9 @@ python train_bfn_twisted.py \
 ## Key Implementation Files
 
 Entry points:
-- `MolPilot/train_bfn_twisted.py` (stage 1 & 4)
+- `MolPilot/train_bfn_twisted.py` (stage 1 & 3)
 - `MolPilot/generate_condition_guidance_dataset.py` (stage 2)
-- `MolPilot/train_geometric_guidance_network.py` (stage 3)
+- `MolPilot/train_geometric_guidance_network.py` (stage 2)
 
 Main configuration:
 - `MolPilot/configs/crossdock_train_test_condition_aware.yaml`
