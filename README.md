@@ -190,15 +190,4 @@ This codebase follows conventions from the MolPilot and TargetDiff ecosystems fo
 
 ---
 
-## Citation
 
-If you use this code, please cite our manuscript:
-
-```bibtex
-@article{wang2025sbddcgbfn,
-  title   = {Conditional Guidance for Bayesian Flow Networks in Structure-Based Drug Design},
-  author  = {Wang, Zilin and Liu, Xianggen and Ke, Bowen and Lv, Jiancheng},
-  year    = {2025},
-  note    = {Manuscript under review}
-}
-```
