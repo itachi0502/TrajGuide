@@ -2,7 +2,7 @@
 
 This repository provides the research code for a **two-stage conditional guidance** pipeline for structure-based drug design (SBDD), built on top of **MolPilot** (a Bayesian Flow Network–based SBDD framework). The pipeline targets **property-controlled generation** (e.g., **QED** and **SA**) while maintaining 3D pocket–ligand consistency.
 
-The implementation used for the four-stage workflow described below lives in `MolPilot/`.
+The implementation used for the three-stage workflow described below lives in `SBDD-CGBFN/`.
 
 ## Method Overview (Four Stages)
 
