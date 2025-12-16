@@ -145,8 +145,8 @@ python train_bfn_twisted.py \
   --test_only --exp_name guided_sampling --revision v1 \
   --eval_batch_size 16 \
   --guidance_model_path models/geometric_guidance/geometric_guidance_best.pt \
-  --guidance_scale 2.5 \
-  --target_qed 0.60 --target_sa 0.78 \
+  --guidance_scale 2.0 \
+  --target_qed 0.56 --target_sa 0.78 \
   --use_gradient_guidance \
   --gpu_device 0
 ```
