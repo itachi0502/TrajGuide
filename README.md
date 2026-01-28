@@ -1,4 +1,4 @@
-# SBDD-CGBFN: Conditional Guidance for Bayesian Flow Networks in Structure-Based Drug Design
+# TrajGuide: Trajectory-level property control for structure-based 3D ligand generation
 
 This repository provides the reference implementation for our manuscript on **structure-based drug design (SBDD)** using a **Bayesian Flow Network (BFN)** backbone and a **geometry-aware conditional guidance** module for property control.
 
